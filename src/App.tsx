@@ -4,7 +4,12 @@ import './App.css'
 const App = () => {
   return (
     <div className='flex justify-center items-center'>
-      <div className='w-[170px] h-[170px] rounded-full bg-red-500'></div>
+      <motion.div
+        initial={{ x: -100 }}
+        animate={{ x: 200 }}
+        transition={{ duration: 2, delay: 2, ease: 'ease-in' }}
+        className='w-[170px] h-[170px] rounded-full bg-sky-500'>
+      </motion.div>
     </div>
   )
 }
