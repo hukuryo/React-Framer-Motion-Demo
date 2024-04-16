@@ -1,11 +1,11 @@
 import './App.css'
-import BasicSintax from './components/BasicSintax'
+// import BasicSintax from './components/BasicSintax'
 import DevelopmentSintax from './components/DevelopmentSintax'
 
 const App = () => {
   return (
     <div className='flex justify-center items-center'>
-      <BasicSintax />
+      {/* <BasicSintax /> */}
       <DevelopmentSintax />
     </div>
   )
