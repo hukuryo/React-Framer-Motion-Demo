@@ -55,7 +55,8 @@ const DevelopmentSintax = () => {
             /> */}
              <motion.div
                 variants={variants}
-                animate="animate"
+                animate={{ rotate: [0, 360] }}
+                transition={{ duration: 2, repeat: Infinity }}
                 className='w-[170px] h-[170px] rounded-full bg-sky-500'>
             </motion.div>
     </div>
