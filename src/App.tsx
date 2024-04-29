@@ -1,5 +1,6 @@
 import { useState } from 'react'
 import { motion } from 'framer-motion'
+import DevelopmentSintax from './components/DevelopmentSintax';
 import './App.css'
 
 function App() {
@@ -20,7 +21,7 @@ function App() {
 
   return (
     <>
-      <div className='h-screen flex justify-center items-center flex-col'>
+      {/* <div className='h-screen flex justify-center items-center flex-col'>
         <div className='mb-[38px]'>
         <ul className='flex gap-[30px]'>
             {logoList.map((logo) => (
@@ -66,7 +67,8 @@ function App() {
             <img src="/choose-lang.png" alt="" className='w-[700px]' />
           </div>
         </section>
-      </div>
+      </div> */}
+      <DevelopmentSintax />
     </>
   )
 }
