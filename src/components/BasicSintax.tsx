@@ -58,6 +58,17 @@ const BasicSintax = () => {
           borderRadius: "100%",
         }}
       />
+      <motion.div
+        style={{
+          width: "300px",
+          height: "300px",
+          borderRadius: "10px",
+          backgroundColor: "pink",
+        }}
+        drag
+        dragConstraints={{ left: 0, right: 300 }}
+        dragMomentum={false}
+      />
     </div>
   );
 };
