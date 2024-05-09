@@ -1,4 +1,4 @@
-import { motion } from "framer-motion";
+import { motion, AnimatePresence } from "framer-motion";
 import "../App.css";
 
 const BasicSintax = () => {
@@ -44,7 +44,7 @@ const BasicSintax = () => {
         whileHover={{ opacity: 0 }}
         className="w-[170px] h-[170px] rounded-full bg-sky-500"
       ></motion.div> */}
-      <motion.div
+      {/* <motion.div
         style={{
           width: "300px",
           height: "300px",
@@ -68,6 +68,15 @@ const BasicSintax = () => {
         drag
         dragConstraints={{ left: 0, right: 300 }}
         dragMomentum={false}
+      /> */}
+      <motion.div
+        style={{
+          width: "300px",
+          height: "300px",
+          borderRadius: "10px",
+          backgroundColor: "pink",
+        }}
+        animate={{ x: 100 }}
       />
     </div>
   );
